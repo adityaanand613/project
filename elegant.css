@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    color: #6d7c90;
+    text-align: left;
+}
+
+div{
+    border: 0;
+    vertical-align: baseline;
+}
+
+.row-container{
+    margin: auto;
+    max-width: 90%;
+    position: relative;
+    width: 1120px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4% -2.5%;
+    max-width: 105%;
+    position: relative;
+}
+
+@media only screen and (min-width:769px){
+    .column-container{
+        flex: 1;
+    }
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.375%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.accent-blue .subhead{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(120deg,#379eff, #1e65ff);
+    -webkit-background-clip: text;
+    color: #3776ff;
+}
+
+h4:first-child{
+    margin-top: 0;
+}
+
+.subhead{
+    font-size: .85em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.7em;
+    margin-bottom: .6em;
+    text-transform: uppercase;
+}
+
+h4{
+    margin: .2em 0 .4em;
+    max-width: 850px;
+    width: 100%;
+}
+
+.headline-2.black-header{
+    -webkit-text-fill-color: inherit;
+    color: #20292f;
+}
+
+.accent-blue .headline-2{
+    background: linear-gradient(120deg, #379eff, #1e65ff);
+    -webkit-background-clip: text;
+}
+
+@media (max-width: 1300px) {
+    .headline-2 {
+        font-size: 7vw;
+    }
+}
+
+.headline-2 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin-bottom: .2em;
+}
+
+h1{
+    max-width: 800px;
+    margin: .2em 0 .4em;
+    width: 100%;
+}
+
+p{
+    margin-bottom: 1em;
+    width: 100%;
+    color: #6d7c90;
+    font-size: 100%;
+    font-size: 1.3em;
+    max-width: 850px;
+}
+
+img:not(.lazy){
+    height: auto;
+}
+
+img{
+    align-self: center;
+    display: block;
+    max-width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.column:not(.inline-elements)>:last-child {
+    margin-bottom: 0;
+}
+
+ .button.primary-button{
+    background: linear-gradient(120deg, rgba(55, 118, 255, 0), #1e65ff);
+    background-color: #379eff;
+    font-size: 15px;
+    padding: 12px 32px;
+}
+
+p+.button {
+    margin-top: 1.5em;
+}
+
+.button{
+    background: linear-gradient(120deg, rgba(55, 118, 255, 0), #1e65ff);
+    background-color: #379eff;
+}
+
+.button.primary-button {
+    font-size: 15px;
+    padding: 12px 32px;
+}
+
+p+.button {
+    margin-top: 1.5em;
+}
+
+.button {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    align-self: flex-start;
+    border: none;
+    border-radius: 100px;
+    color: #fff !important;
+    cursor: pointer;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-transform: uppercase;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+
+.with-callout {
+    position: relative;
+}
+
+.button-callout {
+    -webkit-animation: button-callout 1s ease-in-out;
+    animation: button-callout 1s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    background: #34dd87;
+    border-radius: 8px;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding: 8px 16px;
+    right: 0;
+    text-transform: none;
+    transform: perspective(50em) translateX(100%);
+    transform-origin: 0 50%;
+    width: 180px;
+    z-index: 2;
+    box-shadow: 0 4px 24px 0 rgba(103, 151, 255, .1), 0 12px 64px 0 rgba(103, 151, 255, .1);
+    position: absolute;
+}
+
+.button-callout:before {
+    background: #34dd87;
+    border-radius: 4px;
+    content: "";
+    display: block;
+    height: 25px;
+    left: -4px;
+    position: absolute;
+    top: 15px;
+    transform: rotate(45deg);
+    width: 25px;
+    z-index: -1;
+}
+
+.rellax{
+    transition: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    margin-top: 48px;
+    position: relative;
+}
+
+.row-container.small-width {
+    width: 800px;
+}
+
+.row-container-2{
+    margin: auto;
+    max-width: 90%;
+    position: relative;
+}
